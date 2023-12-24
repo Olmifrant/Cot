@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
             if (scan.hasNextInt()) {
                 choice = scan.nextInt()
                 scan.nextLine()
-                if (choice >= 1 && choice <= 7) {
+                if (choice in 1..7) {
                     break
                 } else {
                     println("Выберите вариант из списка пожалуйста!")
@@ -50,10 +50,10 @@ fun main(args: Array<String>) {
             6 -> myArrayList.get(userIndex())
             7 -> return
 
-            else -> {
-                println("JAVе так спокойнее")
-                continue
-            }
+//            else -> {
+//                println("JAVе так спокойнее")
+//                continue
+//            }
         }
     }
 }
